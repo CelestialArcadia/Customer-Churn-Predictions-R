@@ -79,45 +79,61 @@ churn$TotalCharges <- NULL
 
 # Bar plots for categorical variables
 
-plot_1 <- ggplot(churn, aes(x = gender)) + ggtitle("Gender") + xlab("Gender") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_1 <- ggplot(churn, aes(x = gender)) + ggtitle("Gender") + xlab("Gender") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_2 <- ggplot(chur, aes(x = SeniorCitizen)) + ggtitle("Senior Citizen") + xlab("Senior Citizen") + geom_bar(aes(y = 100*(..count..)/sum(..sum..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_2 <- ggplot(chur, aes(x = SeniorCitizen)) + ggtitle("Senior Citizen") + xlab("Senior Citizen") + geom_bar(aes(y = 100*(..count..)/sum(..sum..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_3 <- ggplot(churn, aes(x = Partner)) + ggtitile("Partner") + xlab("Partner") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_3 <- ggplot(churn, aes(x = Partner)) + ggtitile("Partner") + xlab("Partner") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_4 <- ggplot(churn, aes(x = Dependents)) + ggtitle("Dependents") + xlab("Dependents") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_4 <- ggplot(churn, aes(x = Dependents)) + ggtitle("Dependents") + xlab("Dependents") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
 grid.arrange(plot_1,plot_2,plot_3,plot_4, ncol = 2)
 
-plot_5 <- ggplot(churn, aes(x = PhoneService)) + ggtitle("Phone Service") + xlab("Phone Service") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_5 <- ggplot(churn, aes(x = PhoneService)) + ggtitle("Phone Service") + xlab("Phone Service") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_6 <- ggplot(churn, aes(x = MultipleLines)) + ggtitle("Multiple Lines") + xlab("Multiple Lines") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_6 <- ggplot(churn, aes(x = MultipleLines)) + ggtitle("Multiple Lines") + xlab("Multiple Lines") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_7 <- ggplot(churn, aes(x = InternetService)) + ggtitle("Internet Service") + xlab("Internet Service") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_7 <- ggplot(churn, aes(x = InternetService)) + ggtitle("Internet Service") + xlab("Internet Service") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_8 <- ggplot(churn, aes(x = OnlineSecurity)) + ggtitle("Online Security") + xlab("Online Security") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_8 <- ggplot(churn, aes(x = OnlineSecurity)) + ggtitle("Online Security") + xlab("Online Security") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
 grid.arrange(plot_5,plot_6,plot_7,plot_8, ncol = 2)
 
-plot_9 <- ggplot(churn, aes(x = OnlineBackup)) + ggtitle("Online Backup") + xlab("Online Backup") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_9 <- ggplot(churn, aes(x = OnlineBackup)) + ggtitle("Online Backup") + xlab("Online Backup") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
 plot_10 <- ggplot(churn, aes(x = DeviceProtection)) + ggtitle("Device Protection") + xlab("Device Protection") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_11 <- ggplot(churn, aes(x = TechSupport)) + ggtitle("Tech Support") + xlab("Tech Support") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_11 <- ggplot(churn, aes(x = TechSupport)) + ggtitle("Tech Support") + xlab("Tech Support") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_12 <- ggplot(churn, aes(x = StreamingTV)) + ggtitle("Streaming TV") + xlab("Streaming TV") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_12 <- ggplot(churn, aes(x = StreamingTV)) + ggtitle("Streaming TV") + xlab("Streaming TV") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
 grid.arrange(plot_9,plot_10,plot_11,plot_12, ncol = 2)
 
-plot_13 <- ggplot(churn, aes(x = StreamingMovies)) + ggtitle("Streaming Movies") + xlab("Streaming Movies") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_13 <- ggplot(churn, aes(x = StreamingMovies)) + ggtitle("Streaming Movies") + xlab("Streaming Movies") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_14 <- ggplot(churn, aes(x = Contract)) + ggtitle("Contract") + xlab("Contract") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_14 <- ggplot(churn, aes(x = Contract)) + ggtitle("Contract") + xlab("Contract") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_15 <- ggplot(churn, aes(x = PaperlessBilling)) + ggtitle("Paperless Billing") + xlab("Paperless Billing") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_15 <- ggplot(churn, aes(x = PaperlessBilling)) + ggtitle("Paperless Billing") + xlab("Paperless Billing") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) +
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_16 <- ggplot(churn, aes(x = PaymentMethod)) + ggtitle("Payment Method") + xlab("Payment Method") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_16 <- ggplot(churn, aes(x = PaymentMethod)) + ggtitle("Payment Method") + xlab("Payment Method") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
-plot_17 <- ggplot(churn, aes(x = tenure_group)) + ggtitle("Tenure Group") + xlab("Tenure Group") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + ylab("Percentage") + coord_flip() + theme_minimal()
+plot_17 <- ggplot(churn, aes(x = tenure_group)) + ggtitle("Tenure Group") + xlab("Tenure Group") + geom_bar(aes(y = 100*(..count..)/sum(..count..)), width = 0.5) + 
+    ylab("Percentage") + coord_flip() + theme_minimal()
 
 grid.arrange(plot_13,plot_14,plot_15,plot_16,plot_17, ncol = 2)
 
@@ -140,7 +156,7 @@ dim(testing);
 
 # Fitting the Logistic Regression Model
 
-LogModel <- glm(Churn ~.,family = binomial(link = "logit"), data = training)
+LogModel <- glm(Churn ~., family = binomial(link = "logit"), data = training)
 print(summary(LogModel))
 
 # Feature Analysis
