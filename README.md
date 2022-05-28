@@ -6,7 +6,35 @@ Customer churn occurs when customers or subscribers stop doing business with a c
 
 Logistic Regression, Decision Tree, and Random Forest will be introduced in R and will be used for the predictive workflow. 
 
-## Data
+## Table of contents
+
+1. Data Overview
+2. Data Preprocessing
+3. Exploratory Data Analysis & Feature Selection
+    - Correlation Between Numeric Variables
+    - Bar plots of categorical variables
+4. Logistic Regression
+    - Fitting the Logistic Regression Model
+    - Feature Analysis (Deviance Table)
+    - Assessing the predictive ability of the Logistic Regression model
+    - Logistic Regression Confusion Matrix
+    - Odds Ratio
+5. Decision Tree
+    - Decision Tree Visualization
+    - Decision Tree Confusion Matrix
+    - Decision Tree Accuracy
+6. Random Forest
+    - Random Forest Initial Model
+    - Random Forest Prediction and Confusion Matrix
+    - Random Forest Error Rate
+    - Tunning of Random Forest Model
+    - Fitting Random Forest Model Post-Tuning
+    - Random Forest Predictions & Confusion Matrix Post-Tuning
+    - Random Forest Feature Importance
+7. Summary
+
+
+## Data Overview
 
 The data was downloaded from IBM Sample Data Sets. Each row represents a customer, each column contains that customer’s attributes:
 
@@ -34,8 +62,7 @@ The data was downloaded from IBM Sample Data Sets. Each row represents a custome
 
 The raw data contains 7043 rows (customers) and 21 columns (features). The “Churn” column is our target.
 
-## Project's Summary
-### For a more thorough detailed workflow process check the "detailed_workflow" document
+## Summary
 
 The results displays that Logistic Regression, Decision Tree and Random Forest can be used for customer churn analysis for this particular dataset equally fine.
 
