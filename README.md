@@ -2,7 +2,9 @@
 
 ## Introduction 
 
-Customer churn occurs when customers or subscribers stop doing business with a company or service, also known as customer attrition. It is also referred to as loss of clients or customers. One industry in which churn rates are particularly useful is the telecommunications industry because most customers have multiple options from which to choose within a geographic location.
+Customer churn occurs when customers or subscribers stop doing business with a company or service, also known as customer attrition. 
+
+It is also referred to as the loss of clients or customers. One industry in which churn rates are particularly useful is the telecommunications industry because most customers have multiple options from which to choose within a geographic location.
 
 Logistic Regression, Decision Tree, and Random Forest will be introduced in R and will be used for the predictive workflow. 
 
@@ -64,7 +66,7 @@ The raw data contains 7043 rows (customers) and 21 columns (features). The “Ch
 
 ## Summary
 
-The results displays that Logistic Regression, Decision Tree and Random Forest can be used for customer churn analysis for this particular dataset equally fine.
+The results display that Logistic Regression, Decision Tree and Random Forest can be used for customer churn analysis for this particular dataset equally fine.
 
 Throughout the analysis, several important things were observed:
 
@@ -72,4 +74,4 @@ Throughout the analysis, several important things were observed:
 
 * There does not seem to be a relationship between gender and churn.
 
-* Customers in a month-to-month contract, with PaperlessBilling and are within 12 months tenure, are more likely to churn; On the other hand, customers with one or two-year contracts, with longer than 12 months tenure, are not using PaperlessBilling, are less likely to churn.
+* Customers in a month-to-month contract, with PaperlessBilling and within 12 months tenure, are more likely to churn; On the other hand, customers with one or two-year contracts, with longer than 12 months tenure, are not using PaperlessBilling, are less likely to churn.
